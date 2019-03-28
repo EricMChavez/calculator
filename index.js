@@ -77,3 +77,9 @@ function clearActive() {
 		old.removeAttribute('id');
 	}
 }
+function easterEgg() {
+	document.getElementById('display').innerHTML = 'Eric is Awesome!';
+	setTimeout(function() {
+		refresh();
+	}, 1000);
+}
