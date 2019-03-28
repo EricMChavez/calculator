@@ -34,15 +34,15 @@ function operater(task, selected) {
 }
 
 function equate() {
-	if (operation == '+') {
+	if (operation == '+' && display != '') {
 		addition(value1, Number(display));
-	} else if (operation == '-') {
+	} else if (operation == '-' && display != '') {
 		subtraction(value1, Number(display));
-	} else if (operation == 'x') {
+	} else if (operation == 'x' && display != '') {
 		multiplication(value1, Number(display));
-	} else if (operation == '÷') {
+	} else if (operation == '÷' && display != '') {
 		division(value1, Number(display));
-	} else if (display != '') {
+	} else if (operation == '' && display != '') {
 		document.getElementById('display').innerHTML = 'Select Operation';
 		setTimeout(function() {
 			refresh();
