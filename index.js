@@ -78,7 +78,7 @@ function clearActive() {
 	}
 }
 function easterEgg() {
-	document.getElementById('display').innerHTML = 'Eric is Awesome!';
+	document.getElementById('display').innerHTML = '© Eric Chavez 2019';
 	setTimeout(function() {
 		refresh();
 	}, 1000);
