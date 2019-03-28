@@ -1,5 +1,6 @@
 let display = '';
 let value1 = '';
+let value2 = '';
 let operation = '';
 function input(btn) {
 	display = display.concat(btn);
@@ -7,6 +8,7 @@ function input(btn) {
 }
 function refresh() {
 	document.getElementById('display').innerHTML = display;
+	document.getElementById('ghost').innerHTML = value1;
 }
 function allClear() {
 	display = '';
@@ -17,19 +19,19 @@ function allClear() {
 }
 function operater(task) {
 	operation = task;
-	value1 = display;
+	value1 = Number(display);
 	display = '';
 	refresh();
 }
 function equate() {
 	if (operation == '+') {
-		addition();
+		addition(value1, Number(display));
 	} else if (operation == '-') {
-		subtraction();
+		subtraction(value1, Number(display));
 	} else if (operation == 'x') {
-		multiplication();
+		multiplication(value1, Number(display));
 	} else if (operation == '÷') {
-		division();
+		division(value1, Number(display));
 	} else {
 		document.getElementById('display').innerHTML = 'Select Operation';
 		setTimeout(function() {
@@ -38,7 +40,24 @@ function equate() {
 	}
 }
 
-function addition() {}
-function subtraction() {}
-function multiplication() {}
-function division() {}
+function addition(value1, value2) {
+	let answer = value1 + value2;
+	allClear();
+	document.getElementById('display').innerHTML = answer;
+}
+
+function subtraction(value1, value2) {
+	let answer = value1 - value2;
+	allClear();
+	document.getElementById('display').innerHTML = answer;
+}
+function multiplication(value1, value2) {
+	let answer = value1 * value2;
+	allClear();
+	document.getElementById('display').innerHTML = answer;
+}
+function division(value1, value2) {
+	let answer = value1 / value2;
+	allClear();
+	document.getElementById('display').innerHTML = answer;
+}

@@ -4,11 +4,18 @@
 	height: 540px;
 	background-color: orange;
 }
-#display {
+#display-container {
 	height: 90px;
 	width: 100%;
 	background-color: darkgray;
 	text-align: center;
+}
+#display {
+	padding: 10px;
+}
+#ghost {
+	padding: 20px;
+	color: gray;
 }
 .square {
 	float: left;
