@@ -1,0 +1,28 @@
+#calculator-container {
+	margin: 100px auto;
+	width: 360px;
+	height: 540px;
+	background-color: orange;
+}
+#display {
+	height: 90px;
+	width: 100%;
+	background-color: darkgray;
+	text-align: center;
+}
+.square {
+	float: left;
+	height: 90;
+	width: 90;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+}
+#equals {
+	float: right;
+	height: 270px;
+	width: 90;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+}
