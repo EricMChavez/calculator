@@ -15,6 +15,7 @@
 	font-size: 30px;
 	color: white;
 	border-top-left-radius: 15px;
+	border-top: solid 5px rgb(66, 66, 66);
 }
 :focus {
 	outline: none;

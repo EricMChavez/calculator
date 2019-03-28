@@ -53,22 +53,26 @@ function equate() {
 function addition(value1, value2) {
 	let answer = value1 + value2;
 	allClear();
+	display = answer;
 	document.getElementById('display').innerHTML = answer;
 }
 
 function subtraction(value1, value2) {
 	let answer = value1 - value2;
 	allClear();
+	display = answer;
 	document.getElementById('display').innerHTML = answer;
 }
 function multiplication(value1, value2) {
 	let answer = value1 * value2;
 	allClear();
+	display = answer;
 	document.getElementById('display').innerHTML = answer;
 }
 function division(value1, value2) {
 	let answer = value1 / value2;
 	allClear();
+	display = answer;
 	document.getElementById('display').innerHTML = answer;
 }
 function clearActive() {
