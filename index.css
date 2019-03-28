@@ -30,6 +30,7 @@
 	margin: 0px;
 	padding: 0px;
 	background-color: white;
+	font-size: 18px;
 }
 #equals {
 	float: right;
@@ -38,6 +39,7 @@
 	margin: 0px;
 	padding: 0px;
 	background-color: white;
+	font-size: 28px;
 }
 #active {
 	opacity: .6;
