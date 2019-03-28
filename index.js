@@ -15,13 +15,18 @@ function allClear() {
 	value1 = '';
 	value2 = '';
 	operation = '';
+	clearActive();
 	refresh();
 }
-function operater(task) {
-	operation = task;
-	value1 = Number(display);
-	display = '';
-	refresh();
+function operater(task, selected) {
+	if (display != '') {
+		value1 = Number(display);
+		operation = task;
+		display = '';
+		refresh();
+		clearActive();
+		selected.setAttribute('id', 'active');
+	}
 }
 function equate() {
 	if (operation == '+') {
@@ -32,7 +37,7 @@ function equate() {
 		multiplication(value1, Number(display));
 	} else if (operation == '÷') {
 		division(value1, Number(display));
-	} else {
+	} else if (display != '') {
 		document.getElementById('display').innerHTML = 'Select Operation';
 		setTimeout(function() {
 			refresh();
@@ -60,4 +65,10 @@ function division(value1, value2) {
 	let answer = value1 / value2;
 	allClear();
 	document.getElementById('display').innerHTML = answer;
+}
+function clearActive() {
+	if (document.getElementById('active')) {
+		let old = document.getElementById('active');
+		old.removeAttribute('id');
+	}
 }
