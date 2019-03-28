@@ -83,3 +83,8 @@ function easterEgg() {
 		refresh();
 	}, 1000);
 }
+$(document).keypress(function(e) {
+	if (e.which == 13) {
+		$('#equals').click();
+	}
+});
