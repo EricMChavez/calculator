@@ -19,7 +19,11 @@ function allClear() {
 	refresh();
 }
 function operater(task, selected) {
-	if (display != '') {
+	if (value1 != '') {
+		operation = task;
+		clearActive();
+		selected.setAttribute('id', 'active');
+	} else if (display != '') {
 		value1 = Number(display);
 		operation = task;
 		display = '';
@@ -28,6 +32,7 @@ function operater(task, selected) {
 		selected.setAttribute('id', 'active');
 	}
 }
+
 function equate() {
 	if (operation == '+') {
 		addition(value1, Number(display));

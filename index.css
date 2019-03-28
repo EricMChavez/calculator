@@ -2,7 +2,7 @@
 	margin: 100px auto;
 	width: 360px;
 	height: 540px;
-	background-color: orange;
+	background-color: darkorange;
 	box-shadow: 5px 5px 15px gray;
 	border-top-left-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -44,4 +44,7 @@
 }
 img {
 	border-bottom-right-radius: 15px;
+}
+.operater {
+	opacity: .8;
 }
