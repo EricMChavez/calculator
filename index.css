@@ -20,6 +20,12 @@
 :focus {
 	outline: none;
 }
+.square:hover {
+	background-image: linear-gradient(rgb(238, 238, 238), rgb(189, 189, 189));
+}
+#equals:hover {
+	background-image: linear-gradient(rgb(238, 238, 238), rgb(189, 189, 189));
+}
 #ghost {
 	height: 30px;
 	padding-top: 5px;
@@ -35,7 +41,7 @@
 	padding: 0px;
 	background-color: white;
 	font-size: 18px;
-	background-image: linear-gradient(rgb(238, 238, 238), rgb(185, 185, 185));
+	background-image: linear-gradient(rgb(238, 238, 238), rgb(201, 201, 201));
 }
 .square:active {
 	opacity: .7;
@@ -48,7 +54,7 @@
 	padding: 0px;
 	background-color: white;
 	font-size: 28px;
-	background-image: linear-gradient(rgb(238, 238, 238), rgb(185, 185, 185));
+	background-image: linear-gradient(rgb(238, 238, 238), rgb(201, 201, 201));
 }
 #equals:active {
 	opacity: .7;
