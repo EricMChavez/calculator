@@ -30,6 +30,9 @@ body {
 #equals:hover {
 	background-image: linear-gradient(rgb(238, 238, 238), rgb(189, 189, 189));
 }
+.operator:hover {
+	background-image: linear-gradient(rgb(238, 238, 238), rgb(189, 189, 189));
+}
 #ghost {
 	height: 30px;
 	padding-top: 5px;
