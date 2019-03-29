@@ -87,20 +87,23 @@ function easterEgg() {
 		refresh();
 	}, 1000);
 }
-document.onkeypress = function(e) {
+document.addEventListener('keydown', function(e) {
+	console.dir(e);
 	if (e.keyCode >= 48 && e.keyCode <= 57) {
 		//numbers
 		input(e.keyCode - 48);
 	} else if (e.keyCode === 13) {
 		e.preventDefault();
 		equate();
-	} else if (e.keyCode == 61) {
-		document.getElementById('addition').click();
-	} else if (e.keyCode == 45) {
-		document.getElementById('subtraction').click();
-	} else if (e.keyCode == 120) {
-		document.getElementById('multiplication').click();
-	} else if (e.keyCode == 47) {
-		document.getElementById('division').click();
+	} else if (e.keyCode == 187) {
+		document.querySelector('.addition').click();
+	} else if (e.keyCode == 189) {
+		document.querySelector('.subtraction').click();
+	} else if (e.keyCode == 88) {
+		document.querySelector('.multiplication').click();
+	} else if (e.keyCode == 191) {
+		document.querySelector('.division').click();
+	} else if (e.keyCode == 8) {
+		document.querySelector('.allClear').click();
 	}
-};
+});
