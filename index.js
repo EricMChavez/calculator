@@ -87,3 +87,15 @@ function easterEgg() {
 		refresh();
 	}, 1000);
 }
+document.onkeypress = function(e) {
+	if (e.keyCode >= 48 && e.keyCode <= 57) {
+		//numbers
+		input(e.keyCode - 48);
+	} else if (e.keyCode === 13) {
+		e.preventDefault();
+		equate();
+	} else if (e.keyCode === 88) {
+		e.preventDefault();
+		equate();
+	}
+};
