@@ -18,7 +18,7 @@ function allClear() {
 	clearActive();
 	refresh();
 }
-function operater(task, selected) {
+function operator(task, selected) {
 	if (value1 != '') {
 		operation = task;
 		clearActive();
