@@ -94,8 +94,13 @@ document.onkeypress = function(e) {
 	} else if (e.keyCode === 13) {
 		e.preventDefault();
 		equate();
-	} else if (e.keyCode === 88) {
-		e.preventDefault();
-		equate();
+	} else if (e.keyCode == 61) {
+		document.getElementById('addition').click();
+	} else if (e.keyCode == 45) {
+		document.getElementById('subtraction').click();
+	} else if (e.keyCode == 120) {
+		document.getElementById('multiplication').click();
+	} else if (e.keyCode == 47) {
+		document.getElementById('division').click();
 	}
 };
